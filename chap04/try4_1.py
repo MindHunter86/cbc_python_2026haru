@@ -1,7 +1,12 @@
-total=0
-count=1
-while count<=100:
-    total+=count
-    count+=1
+total = 0
+counter = 0
+while counter <= 100:
+    total += counter
+    if counter != 100:
+        print(f"{counter} + ", end="")
+    else:
+        print(f"{counter}", end="")
+    counter += 1
 
-print(total)
+print("")
+print(f"total is {total}")

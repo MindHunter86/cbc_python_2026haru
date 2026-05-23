@@ -1,12 +1,8 @@
-total=0
-count=0
+print("enter numbers for summarize")
+num = 1
+sum = 0
+while num != 0:
+    num = int(input("your number >>").strip() or 0)
+    sum += num
 
-
-while True:
-    count==int(input('too oruulnuu>>>'))
-    
-    if count ==0:
-        break
-    total+=count
-    
-print(f"niit too:{total}")
+print(f"sum of numbers {sum}")
