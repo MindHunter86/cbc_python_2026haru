@@ -1,0 +1,6 @@
+リンク1
+https://www.cbc.ac.jp/
+
+リンク2
+https://cbc-gict.net/t_kazama/py/test1.html
+
