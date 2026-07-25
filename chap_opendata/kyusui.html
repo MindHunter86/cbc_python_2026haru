@@ -1,0 +1,4431 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8ad0d0d794aa44828e9b085025919fdf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_8ad0d0d794aa44828e9b085025919fdf" ></div>
+        
+</body>
+<script>    
+    
+            var map_8ad0d0d794aa44828e9b085025919fdf = L.map(
+                "map_8ad0d0d794aa44828e9b085025919fdf",
+                {
+                    center: [35.942957, 136.198863],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_deeb5f62bd7f43bb839da25e5b2773b8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            var marker_21e1adb2afb84dd68ac6374706793c12 = L.marker(
+                [35.53017208333333, 139.70243],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_21e1adb2afb84dd68ac6374706793c12.bindTooltip(
+                `<div>
+                     川崎市役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_457a7870a1b8433d9df120c225d80e35 = L.marker(
+                [35.54084780555556, 139.67313069444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_457a7870a1b8433d9df120c225d80e35.bindTooltip(
+                `<div>
+                     新小倉小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a358cb5f8e849f4a012ff7fceaad1b7 = L.marker(
+                [35.59600372222222, 139.62271711111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2a358cb5f8e849f4a012ff7fceaad1b7.bindTooltip(
+                `<div>
+                     坂戸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fcad164ee49545f491192cc2389bd509 = L.marker(
+                [35.59740019444445, 139.5894991388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_fcad164ee49545f491192cc2389bd509.bindTooltip(
+                `<div>
+                     南原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec5e96a661404e48b98ce3ea01b79ac4 = L.marker(
+                [35.58701325, 139.49974944444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ec5e96a661404e48b98ce3ea01b79ac4.bindTooltip(
+                `<div>
+                     柿生中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e0fa717f66b459c9b8b909c8effd8a1 = L.marker(
+                [35.54853469444444, 139.67875908333335],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4e0fa717f66b459c9b8b909c8effd8a1.bindTooltip(
+                `<div>
+                     塚越中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f22ab0c8cb74133b3890ef7f1e99f0c = L.marker(
+                [35.53816480555555, 139.69373266666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_3f22ab0c8cb74133b3890ef7f1e99f0c.bindTooltip(
+                `<div>
+                     幸町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a21a6411ca3547deba5d2cfd2ce1cfcb = L.marker(
+                [35.59697655555556, 139.62990722222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a21a6411ca3547deba5d2cfd2ce1cfcb.bindTooltip(
+                `<div>
+                     北見方
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a5cf53ef8c64744856a3102079bb7e0 = L.marker(
+                [35.59174038888889, 139.6318395],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2a5cf53ef8c64744856a3102079bb7e0.bindTooltip(
+                `<div>
+                     大谷戸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c118c02ac9c4e6b8e41562f5316757f = L.marker(
+                [35.52410994444445, 139.71532355555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_3c118c02ac9c4e6b8e41562f5316757f.bindTooltip(
+                `<div>
+                     向小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab7084dddb454adfb530b31afc8f9c4b = L.marker(
+                [35.51929611111111, 139.6926131388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ab7084dddb454adfb530b31afc8f9c4b.bindTooltip(
+                `<div>
+                     京町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46a4823d32af4e3da97bf0cace642575 = L.marker(
+                [35.51696041666667, 139.71752552777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_46a4823d32af4e3da97bf0cace642575.bindTooltip(
+                `<div>
+                     大島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4c2dc44acac40838741c8b5854682de = L.marker(
+                [35.52783186111111, 139.70815133333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a4c2dc44acac40838741c8b5854682de.bindTooltip(
+                `<div>
+                     富士見中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_243f17316df94fb08fcba9678e71a11d = L.marker(
+                [35.52322397222222, 139.72727847222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_243f17316df94fb08fcba9678e71a11d.bindTooltip(
+                `<div>
+                     桜本中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78314bfae93b46fb88441e59de162bc1 = L.marker(
+                [35.52739644444444, 139.7154313888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_78314bfae93b46fb88441e59de162bc1.bindTooltip(
+                `<div>
+                     川崎高付属中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_614b49c1cc4845b4888c59ebe44e9463 = L.marker(
+                [35.52068777777778, 139.72225297222224],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_614b49c1cc4845b4888c59ebe44e9463.bindTooltip(
+                `<div>
+                     さくら小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70e7983d009c4a55b57b1517ea189f69 = L.marker(
+                [35.54115455555556, 139.66551625],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_70e7983d009c4a55b57b1517ea189f69.bindTooltip(
+                `<div>
+                     小倉小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d352f13de43048d0b067480e107b4141 = L.marker(
+                [35.55384525, 139.66183894444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d352f13de43048d0b067480e107b4141.bindTooltip(
+                `<div>
+                     日吉中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e18e747419fd4aaab4fd9e0de30a84c4 = L.marker(
+                [35.55744880555556, 139.65520072222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e18e747419fd4aaab4fd9e0de30a84c4.bindTooltip(
+                `<div>
+                     木月小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07526b673f0f4a8ea7e4c5dd6db3ee98 = L.marker(
+                [35.595052555555554, 139.6178586388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_07526b673f0f4a8ea7e4c5dd6db3ee98.bindTooltip(
+                `<div>
+                     久本小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6d2154cd1c340a79df4545dce5ca91d = L.marker(
+                [35.60351822222222, 139.6004286388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f6d2154cd1c340a79df4545dce5ca91d.bindTooltip(
+                `<div>
+                     下作延小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5669dc70de2b44f2b01e4ff9ca1bdd35 = L.marker(
+                [35.591814944444444, 139.6214476388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_5669dc70de2b44f2b01e4ff9ca1bdd35.bindTooltip(
+                `<div>
+                     東高津中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe62f4e5e16148a997d2e2b388cf2250 = L.marker(
+                [35.59593297222222, 139.54201927777777],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_fe62f4e5e16148a997d2e2b388cf2250.bindTooltip(
+                `<div>
+                     稗原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef52c379bcac4d90aaf73506459e46b0 = L.marker(
+                [35.588350166666665, 139.5801441388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ef52c379bcac4d90aaf73506459e46b0.bindTooltip(
+                `<div>
+                     富士見台小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffcb1c66a8a14204841c544092eff11f = L.marker(
+                [35.59557961111111, 139.5676138888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ffcb1c66a8a14204841c544092eff11f.bindTooltip(
+                `<div>
+                     白幡台小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6826c607651f4efba2c966363c7243c0 = L.marker(
+                [35.598039166666666, 139.55717752777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6826c607651f4efba2c966363c7243c0.bindTooltip(
+                `<div>
+                     菅生小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d91ad27c884e4ca8b7f2c5cbc3262b7f = L.marker(
+                [35.600295527777774, 139.5766246388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d91ad27c884e4ca8b7f2c5cbc3262b7f.bindTooltip(
+                `<div>
+                     向丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d647e6438c604e18b572c8279eaafd69 = L.marker(
+                [35.63658702777778, 139.52292241666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d647e6438c604e18b572c8279eaafd69.bindTooltip(
+                `<div>
+                     菅中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87f577a678844471a57601fb743c5436 = L.marker(
+                [35.616065, 139.55056433333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_87f577a678844471a57601fb743c5436.bindTooltip(
+                `<div>
+                     東生田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caff11b9d8f54d16a3db09e00a4b1608 = L.marker(
+                [35.57898794444444, 139.48342072222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_caff11b9d8f54d16a3db09e00a4b1608.bindTooltip(
+                `<div>
+                     岡上小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4d2da3aaa5b417e95ebaf12c64d2de9 = L.marker(
+                [35.59782091666667, 139.52788480555554],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a4d2da3aaa5b417e95ebaf12c64d2de9.bindTooltip(
+                `<div>
+                     長沢小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ce143bd52094aabb557113abda834a6 = L.marker(
+                [35.59845611111111, 139.52442225],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9ce143bd52094aabb557113abda834a6.bindTooltip(
+                `<div>
+                     長沢中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8380a315fab14077a709c24dbf922183 = L.marker(
+                [35.59104991666667, 139.4958684722222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8380a315fab14077a709c24dbf922183.bindTooltip(
+                `<div>
+                     柿生小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c9faa4cef9646b4a1be3925fd694e78 = L.marker(
+                [35.59653725, 139.51927633333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9c9faa4cef9646b4a1be3925fd694e78.bindTooltip(
+                `<div>
+                     東百合丘（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbebbf9ab3144a3b9f13b26c24e4e99c = L.marker(
+                [35.55882597222222, 139.65080372222224],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_bbebbf9ab3144a3b9f13b26c24e4e99c.bindTooltip(
+                `<div>
+                     木月
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d88e4b08a6d94f7991d5264a4816788d = L.marker(
+                [35.51287258333333, 139.69896944444446],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d88e4b08a6d94f7991d5264a4816788d.bindTooltip(
+                `<div>
+                     田島中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0f299c4bd654ac5b4d2ac1f74ce8fc9 = L.marker(
+                [35.52544525, 139.72549777777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b0f299c4bd654ac5b4d2ac1f74ce8fc9.bindTooltip(
+                `<div>
+                     藤崎小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea5f424cdbd348ada308015ae6dc3e49 = L.marker(
+                [35.51223933333333, 139.70674958333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ea5f424cdbd348ada308015ae6dc3e49.bindTooltip(
+                `<div>
+                     東小田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29b4d9cc10124139811f6f58dd9d726a = L.marker(
+                [35.523530694444446, 139.71934619444446],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_29b4d9cc10124139811f6f58dd9d726a.bindTooltip(
+                `<div>
+                     東大島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b0590540ecbe49dba879a887b7210e53 = L.marker(
+                [35.50740441666667, 139.70295691666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b0590540ecbe49dba879a887b7210e53.bindTooltip(
+                `<div>
+                     浅田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab8264e0a1b34918bb5903c061f63927 = L.marker(
+                [35.56931494444444, 139.64365172222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ab8264e0a1b34918bb5903c061f63927.bindTooltip(
+                `<div>
+                     井田中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a8c1432d2d04e74a5cd6a8df257ecbc = L.marker(
+                [35.579874527777775, 139.63833086111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8a8c1432d2d04e74a5cd6a8df257ecbc.bindTooltip(
+                `<div>
+                     大戸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_06b1e1eacc6f483f9aa8b8c45e18e006 = L.marker(
+                [35.60746025, 139.61040566666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_06b1e1eacc6f483f9aa8b8c45e18e006.bindTooltip(
+                `<div>
+                     西高津中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05e024ede74c47ac848f6abfd5b601f3 = L.marker(
+                [35.59022294444444, 139.61900427777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_05e024ede74c47ac848f6abfd5b601f3.bindTooltip(
+                `<div>
+                     末長小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2ee25a63b18406caa1895609a674bb3 = L.marker(
+                [35.591531777777774, 139.5653408888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e2ee25a63b18406caa1895609a674bb3.bindTooltip(
+                `<div>
+                     犬蔵小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13fddfa6e71842b9809db90ad701a83f = L.marker(
+                [35.589505, 139.59821552777777],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_13fddfa6e71842b9809db90ad701a83f.bindTooltip(
+                `<div>
+                     宮崎中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e19e50c9f9dc4ab681403ddc03c77df7 = L.marker(
+                [35.59872466666667, 139.580497],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e19e50c9f9dc4ab681403ddc03c77df7.bindTooltip(
+                `<div>
+                     向丘中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7f1c0757c454a5db8fb8a676e9c2b71 = L.marker(
+                [35.61716975, 139.54145577777777],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d7f1c0757c454a5db8fb8a676e9c2b71.bindTooltip(
+                `<div>
+                     生田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26e4177b32824878807f038aaeaf235e = L.marker(
+                [35.627054694444446, 139.53024566666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_26e4177b32824878807f038aaeaf235e.bindTooltip(
+                `<div>
+                     西菅小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae9dfe3acc8447aba4a1fca2df077954 = L.marker(
+                [35.618828416666666, 139.54838186111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ae9dfe3acc8447aba4a1fca2df077954.bindTooltip(
+                `<div>
+                     枡形中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ebdef28a45b4914952f4ba2cce7e4fc = L.marker(
+                [35.62251747222222, 139.55894744444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9ebdef28a45b4914952f4ba2cce7e4fc.bindTooltip(
+                `<div>
+                     登戸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_662c4c3669514d5380af42cf3bd2ce98 = L.marker(
+                [35.599478222222224, 139.51263066666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_662c4c3669514d5380af42cf3bd2ce98.bindTooltip(
+                `<div>
+                     南百合丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3e13a6e6fb643db9fac80b1d497a481 = L.marker(
+                [35.59016752777778, 139.50645972222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a3e13a6e6fb643db9fac80b1d497a481.bindTooltip(
+                `<div>
+                     真福寺小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5fe2486dfa843dca49c798151fa5f3c = L.marker(
+                [35.615905166666664, 139.5188763611111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_c5fe2486dfa843dca49c798151fa5f3c.bindTooltip(
+                `<div>
+                     西生田中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_100abd008ae341c49749ceba8d9731e4 = L.marker(
+                [35.58689758333333, 139.51361697222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_100abd008ae341c49749ceba8d9731e4.bindTooltip(
+                `<div>
+                     王禅寺中央小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a31a08b193c74e3d9221b7cba72d5277 = L.marker(
+                [35.58614852777778, 139.5130663611111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a31a08b193c74e3d9221b7cba72d5277.bindTooltip(
+                `<div>
+                     王禅寺中央中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_717921e425144787a32662c785b0d221 = L.marker(
+                [35.57881780555556, 139.52138025],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_717921e425144787a32662c785b0d221.bindTooltip(
+                `<div>
+                     虹ヶ丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45ea6569e2f748d1a8eef320118a23e3 = L.marker(
+                [35.58000563888889, 139.48247411111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_45ea6569e2f748d1a8eef320118a23e3.bindTooltip(
+                `<div>
+                     岡上
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4216f42ce2cf4be7a91d385efdc698bd = L.marker(
+                [35.58189780555556, 139.62068052777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4216f42ce2cf4be7a91d385efdc698bd.bindTooltip(
+                `<div>
+                     橘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7030f505162433eb68cac1441b1cc75 = L.marker(
+                [35.5895485, 139.58538133333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f7030f505162433eb68cac1441b1cc75.bindTooltip(
+                `<div>
+                     宮前平小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_991a2a78dcb54258873a1ddb835eeccf = L.marker(
+                [35.59834277777778, 139.55277563888887],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_991a2a78dcb54258873a1ddb835eeccf.bindTooltip(
+                `<div>
+                     菅生中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a8a2e5bf26dd4fb19592ef8d3bf677b2 = L.marker(
+                [35.575517777777776, 139.59852427777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a8a2e5bf26dd4fb19592ef8d3bf677b2.bindTooltip(
+                `<div>
+                     野川（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5aa199dacae46408420ae65a7a5d9b6 = L.marker(
+                [35.57349297222222, 139.61345397222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_c5aa199dacae46408420ae65a7a5d9b6.bindTooltip(
+                `<div>
+                     野川（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a4f505d1b10843688ef044a80f703635 = L.marker(
+                [35.57443675, 139.60578166666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a4f505d1b10843688ef044a80f703635.bindTooltip(
+                `<div>
+                     野川（３）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_72080292fd804746834c39f511b1df3d = L.marker(
+                [35.579614666666664, 139.5872248888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_72080292fd804746834c39f511b1df3d.bindTooltip(
+                `<div>
+                     宮崎小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f307dbd6cc545ba8daf4fc7b93f4a8e = L.marker(
+                [35.50562161111111, 139.7247236388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_3f307dbd6cc545ba8daf4fc7b93f4a8e.bindTooltip(
+                `<div>
+                     扇町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_589b399465b44715a83fcebccc12c77a = L.marker(
+                [35.60666075, 139.53364466666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_589b399465b44715a83fcebccc12c77a.bindTooltip(
+                `<div>
+                     南生田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4812128ee03d40d2857bfd1937501a9a = L.marker(
+                [35.59157027777778, 139.62207608333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4812128ee03d40d2857bfd1937501a9a.bindTooltip(
+                `<div>
+                     末長
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e86f86e94c2e4caeaa79f38eb469932e = L.marker(
+                [35.596808277777775, 139.637454],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e86f86e94c2e4caeaa79f38eb469932e.bindTooltip(
+                `<div>
+                     下野毛２丁目公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b75ed08610b04611b18fd776909b1f3d = L.marker(
+                [35.58392533333333, 139.62028475],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b75ed08610b04611b18fd776909b1f3d.bindTooltip(
+                `<div>
+                     橘中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a73f51d5bbed46feb22805a44983375b = L.marker(
+                [35.59185572222222, 139.55252025],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a73f51d5bbed46feb22805a44983375b.bindTooltip(
+                `<div>
+                     菅生（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abbd914d5b5043fab3fdaea41d400023 = L.marker(
+                [35.59850336111111, 139.61394369444446],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_abbd914d5b5043fab3fdaea41d400023.bindTooltip(
+                `<div>
+                     溝口（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f5610ab4af64aa39eb05c9e78c4b5f1 = L.marker(
+                [35.58235941666667, 139.57589266666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6f5610ab4af64aa39eb05c9e78c4b5f1.bindTooltip(
+                `<div>
+                     土橋
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_42526015725d45d18a72f7369ee072a4 = L.marker(
+                [35.588680277777776, 139.64114213888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_42526015725d45d18a72f7369ee072a4.bindTooltip(
+                `<div>
+                     宮内小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b04a2b40116840bd8067cf9b29b9588b = L.marker(
+                [35.527326055555555, 139.71370216666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b04a2b40116840bd8067cf9b29b9588b.bindTooltip(
+                `<div>
+                     川崎高等学校附属中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd3667344a434514b1cd40639fd4d1e4 = L.marker(
+                [35.54333322222222, 139.69153730555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_fd3667344a434514b1cd40639fd4d1e4.bindTooltip(
+                `<div>
+                     御幸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7d2326cac2642d2937db23a221946f5 = L.marker(
+                [35.601281666666665, 139.48626825],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a7d2326cac2642d2937db23a221946f5.bindTooltip(
+                `<div>
+                     白鳥中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21cf898fc8484d60890c40279310dbda = L.marker(
+                [35.61786061111111, 139.46115208333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_21cf898fc8484d60890c40279310dbda.bindTooltip(
+                `<div>
+                     はるひ野小・中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d05454a3a3344fab9d093f0da081c845 = L.marker(
+                [35.57743994444444, 139.56911791666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d05454a3a3344fab9d093f0da081c845.bindTooltip(
+                `<div>
+                     鷺沼小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_734667683b3243e7b815ba581243c129 = L.marker(
+                [35.569424166666664, 139.65841336111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_734667683b3243e7b815ba581243c129.bindTooltip(
+                `<div>
+                     東住吉小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51a2cb2733154a41a157d1f8af1baf1c = L.marker(
+                [35.56668483333333, 139.66833027777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_51a2cb2733154a41a157d1f8af1baf1c.bindTooltip(
+                `<div>
+                     玉川中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_791e2ac491c6490d9195d76dd9a0ba00 = L.marker(
+                [35.61256602777778, 139.54617941666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_791e2ac491c6490d9195d76dd9a0ba00.bindTooltip(
+                `<div>
+                     生田中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b22a1dab1c94e1582b118a1be41a2a2 = L.marker(
+                [35.53194536111111, 139.71465897222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_5b22a1dab1c94e1582b118a1be41a2a2.bindTooltip(
+                `<div>
+                     旭町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a03f0f5afd84819b2c080660a5d6c8f = L.marker(
+                [35.51434641666667, 139.7159915],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_0a03f0f5afd84819b2c080660a5d6c8f.bindTooltip(
+                `<div>
+                     臨港中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d86eb48335ca431c80704cb0d105496f = L.marker(
+                [35.58744772222222, 139.61102330555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d86eb48335ca431c80704cb0d105496f.bindTooltip(
+                `<div>
+                     新作小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c42b6b67fa7847c998998ceeed476da7 = L.marker(
+                [35.52432397222222, 139.69596944444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_c42b6b67fa7847c998998ceeed476da7.bindTooltip(
+                `<div>
+                     川崎小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6a9eb4ddbef4327b316a301d87f022e = L.marker(
+                [35.535934222222224, 139.73521758333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f6a9eb4ddbef4327b316a301d87f022e.bindTooltip(
+                `<div>
+                     東門前小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e32f175465f4fbeb0b2e89f43999bcb = L.marker(
+                [35.5181825, 139.70102847222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_0e32f175465f4fbeb0b2e89f43999bcb.bindTooltip(
+                `<div>
+                     新町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_431e3a5854ea4494912755cd9fa50229 = L.marker(
+                [35.54397544444444, 139.69443983333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_431e3a5854ea4494912755cd9fa50229.bindTooltip(
+                `<div>
+                     御幸中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac2bfc77d53149e6af6f7559ac71520f = L.marker(
+                [35.53752511111111, 139.6911027777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ac2bfc77d53149e6af6f7559ac71520f.bindTooltip(
+                `<div>
+                     南河原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1714822f4e3483f9037298bcb563c2c = L.marker(
+                [35.575808333333335, 139.65084569444446],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a1714822f4e3483f9037298bcb563c2c.bindTooltip(
+                `<div>
+                     今井中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ef20312d0bd4c769792f831c63bcfbf = L.marker(
+                [35.58346077777778, 139.65037133333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9ef20312d0bd4c769792f831c63bcfbf.bindTooltip(
+                `<div>
+                     中原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a90501cf78247fbb289a92eaababa5f = L.marker(
+                [35.604842444444444, 139.55079527777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_5a90501cf78247fbb289a92eaababa5f.bindTooltip(
+                `<div>
+                     東京都長沢浄水場
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1781e75de69c4e6091f0ebc321f41d33 = L.marker(
+                [35.53924683333333, 139.67184405555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_1781e75de69c4e6091f0ebc321f41d33.bindTooltip(
+                `<div>
+                     小倉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a38881e6bac24e0085bdade89fecf641 = L.marker(
+                [35.607914111111114, 139.5446523888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a38881e6bac24e0085bdade89fecf641.bindTooltip(
+                `<div>
+                     三田（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d2471d46d9984007a566d5c4b67bc777 = L.marker(
+                [35.61716738888889, 139.54122105555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d2471d46d9984007a566d5c4b67bc777.bindTooltip(
+                `<div>
+                     生田
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb83fc7149ff42b495dc35b53cc02c55 = L.marker(
+                [35.62661722222222, 139.53812588888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_cb83fc7149ff42b495dc35b53cc02c55.bindTooltip(
+                `<div>
+                     菅馬場（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad6a0ff308dd405eb315c9f431af030d = L.marker(
+                [35.51578694444444, 139.69922930555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ad6a0ff308dd405eb315c9f431af030d.bindTooltip(
+                `<div>
+                     小田（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e746e667de6c4391925325457e3795d8 = L.marker(
+                [35.514517444444444, 139.71577625],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e746e667de6c4391925325457e3795d8.bindTooltip(
+                `<div>
+                     浜町（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34df0654e81b495a8affd864b8a48cb2 = L.marker(
+                [35.57178858333333, 139.584873],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_34df0654e81b495a8affd864b8a48cb2.bindTooltip(
+                `<div>
+                     有馬（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_073296c3f211400baaa3a5eaed6f1eb1 = L.marker(
+                [35.62431294444445, 139.56473405555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_073296c3f211400baaa3a5eaed6f1eb1.bindTooltip(
+                `<div>
+                     登戸第２公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19a1444439734194b00d9417ecaa2e3e = L.marker(
+                [35.62853536111111, 139.54693722222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_19a1444439734194b00d9417ecaa2e3e.bindTooltip(
+                `<div>
+                     中野島
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95c14283246b4af1a80ec960e3a5723a = L.marker(
+                [35.614082583333335, 139.50005058333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_95c14283246b4af1a80ec960e3a5723a.bindTooltip(
+                `<div>
+                     金程
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0690513899e84797bd7ef6a32888ea33 = L.marker(
+                [35.60093947222222, 139.48595844444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_0690513899e84797bd7ef6a32888ea33.bindTooltip(
+                `<div>
+                     白鳥
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_709981a3ca9a45f4906c857927ce85fd = L.marker(
+                [35.53612866666667, 139.6889941111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_709981a3ca9a45f4906c857927ce85fd.bindTooltip(
+                `<div>
+                     都町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efb57d1ed0dc435d99944cb7ae27b74d = L.marker(
+                [35.56639327777778, 139.62001097222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_efb57d1ed0dc435d99944cb7ae27b74d.bindTooltip(
+                `<div>
+                     久末
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e03765a0015647fea84085ea2aecc2c7 = L.marker(
+                [35.53730016666667, 139.7450687222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e03765a0015647fea84085ea2aecc2c7.bindTooltip(
+                `<div>
+                     殿町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c613f73561c4739ba90dc122dd84e9a = L.marker(
+                [35.516742416666666, 139.7191385],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9c613f73561c4739ba90dc122dd84e9a.bindTooltip(
+                `<div>
+                     浜町（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f4e15b97624453faafee1157e00a141 = L.marker(
+                [35.512186166666666, 139.69747188888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2f4e15b97624453faafee1157e00a141.bindTooltip(
+                `<div>
+                     小田（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b77d3632c2eb4bb0bc36dd9c0896d70c = L.marker(
+                [35.54457263888889, 139.6934866111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b77d3632c2eb4bb0bc36dd9c0896d70c.bindTooltip(
+                `<div>
+                     戸手
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28c060647374490586bf6f39e3a1461f = L.marker(
+                [35.569065333333334, 139.65856633333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_28c060647374490586bf6f39e3a1461f.bindTooltip(
+                `<div>
+                     木月住吉町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a134f147b3634d8dba9168c698939f61 = L.marker(
+                [35.59003030555556, 139.63877433333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a134f147b3634d8dba9168c698939f61.bindTooltip(
+                `<div>
+                     宮内
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07ab2bb279d64a04afd644438fd167b6 = L.marker(
+                [35.56550338888889, 139.63950433333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_07ab2bb279d64a04afd644438fd167b6.bindTooltip(
+                `<div>
+                     井田
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bc75c44b704409e86553bfe165e9c36 = L.marker(
+                [35.57619963888889, 139.62749141666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6bc75c44b704409e86553bfe165e9c36.bindTooltip(
+                `<div>
+                     千年（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e103e5de10754c239f630494d3e0d6ff = L.marker(
+                [35.60635525, 139.6122697222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e103e5de10754c239f630494d3e0d6ff.bindTooltip(
+                `<div>
+                     溝口（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75337398daa4495aa8b02905d5e2fc7e = L.marker(
+                [35.58652663888889, 139.6081465],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_75337398daa4495aa8b02905d5e2fc7e.bindTooltip(
+                `<div>
+                     新作
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_215db8db49c34193946068cebfcbc578 = L.marker(
+                [35.58266641666667, 139.62112419444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_215db8db49c34193946068cebfcbc578.bindTooltip(
+                `<div>
+                     千年（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95d367a3fa104eda9e5aa2ab46b097d3 = L.marker(
+                [35.59555116666667, 139.61674422222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_95d367a3fa104eda9e5aa2ab46b097d3.bindTooltip(
+                `<div>
+                     久本小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_202d19e2678c4d6da1995217ded8801c = L.marker(
+                [35.59330858333333, 139.590829],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_202d19e2678c4d6da1995217ded8801c.bindTooltip(
+                `<div>
+                     宮崎（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_694779284b774005891f663e95312923 = L.marker(
+                [35.59424258333333, 139.5615476111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_694779284b774005891f663e95312923.bindTooltip(
+                `<div>
+                     菅生（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4436eca5aa1e4c94aad541dd4f658e3a = L.marker(
+                [35.59414205555556, 139.53706966666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4436eca5aa1e4c94aad541dd4f658e3a.bindTooltip(
+                `<div>
+                     菅生ケ丘
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54906d5d064044aea3e47f093daadbf2 = L.marker(
+                [35.60161591666667, 139.58690205555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_54906d5d064044aea3e47f093daadbf2.bindTooltip(
+                `<div>
+                     東高根森林公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97de6343a51442dfbb4e736f3a7f7f6d = L.marker(
+                [35.57045058333333, 139.57718797222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_97de6343a51442dfbb4e736f3a7f7f6d.bindTooltip(
+                `<div>
+                     有馬（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dee69d0268244cbabe0b9b59d7dad014 = L.marker(
+                [35.588759277777775, 139.5986871388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_dee69d0268244cbabe0b9b59d7dad014.bindTooltip(
+                `<div>
+                     宮崎（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_608dc4306dac40e3afe2bc926f2bc7d1 = L.marker(
+                [35.59005802777778, 139.56383377777777],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_608dc4306dac40e3afe2bc926f2bc7d1.bindTooltip(
+                `<div>
+                     犬蔵
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1353bc67d54a4dfba834a6ec42b3b32b = L.marker(
+                [35.61259919444444, 139.5921031111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_1353bc67d54a4dfba834a6ec42b3b32b.bindTooltip(
+                `<div>
+                     堰　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f35d3d8526d74d6294cf7f1537c53a6b = L.marker(
+                [35.605729527777775, 139.57740230555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f35d3d8526d74d6294cf7f1537c53a6b.bindTooltip(
+                `<div>
+                     長尾
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_996cf41962a8441ebed93a59bab15e3d = L.marker(
+                [35.61694286111111, 139.5599009722222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_996cf41962a8441ebed93a59bab15e3d.bindTooltip(
+                `<div>
+                     枡形（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b64941344294313b44c98ef97ede881 = L.marker(
+                [35.63260419444445, 139.53360355555554],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_7b64941344294313b44c98ef97ede881.bindTooltip(
+                `<div>
+                     菅　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_12dd5def02984eba858f5f21d2ccbdbd = L.marker(
+                [35.61720011111111, 139.57844094444445],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_12dd5def02984eba858f5f21d2ccbdbd.bindTooltip(
+                `<div>
+                     宿河原
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fa067ae1e0c437aa911ae8d5d2d1c19 = L.marker(
+                [35.627037055555554, 139.55681219444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_5fa067ae1e0c437aa911ae8d5d2d1c19.bindTooltip(
+                `<div>
+                     登戸
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4c4f1573c414d2e9b974f73de016c53 = L.marker(
+                [35.61019091666667, 139.56278041666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b4c4f1573c414d2e9b974f73de016c53.bindTooltip(
+                `<div>
+                     枡形（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f426a685e7b4558970b3134e34cff01 = L.marker(
+                [35.61277675, 139.54552744444445],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8f426a685e7b4558970b3134e34cff01.bindTooltip(
+                `<div>
+                     三田（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dba851aa613a4b8cb6f34b05e235fc21 = L.marker(
+                [35.61698886111111, 139.5078758888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_dba851aa613a4b8cb6f34b05e235fc21.bindTooltip(
+                `<div>
+                     千代ケ丘
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ecbd4953aab4d2bb88f72f346fbfe6c = L.marker(
+                [35.602707583333334, 139.48218202777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8ecbd4953aab4d2bb88f72f346fbfe6c.bindTooltip(
+                `<div>
+                     栗平
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4147a8cabf1f4c24917e7a14f83aa364 = L.marker(
+                [35.57962333333333, 139.52246205555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4147a8cabf1f4c24917e7a14f83aa364.bindTooltip(
+                `<div>
+                     虹ヶ丘公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a74dae5a5a1b4b74a4768884e01636b9 = L.marker(
+                [35.54419952777778, 139.66216644444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a74dae5a5a1b4b74a4768884e01636b9.bindTooltip(
+                `<div>
+                     南加瀬中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df1d87d13b934eeb875d815815b778b4 = L.marker(
+                [35.604623277777776, 139.61412925],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_df1d87d13b934eeb875d815815b778b4.bindTooltip(
+                `<div>
+                     高津小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc432b6658904159b8b19f83b9875372 = L.marker(
+                [35.58603316666667, 139.60394961111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_bc432b6658904159b8b19f83b9875372.bindTooltip(
+                `<div>
+                     梶ヶ谷小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a2d10c513d14f42943b7ce1640671df = L.marker(
+                [35.589270472222225, 139.6031155],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_7a2d10c513d14f42943b7ce1640671df.bindTooltip(
+                `<div>
+                     梶ヶ谷第１公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fff20f1f0d34940851ed499bb371d21 = L.marker(
+                [35.52764766666667, 139.72196555555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2fff20f1f0d34940851ed499bb371d21.bindTooltip(
+                `<div>
+                     川中島中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77b456208042488dba4c6f4a319dde55 = L.marker(
+                [35.52665841666666, 139.73753544444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_77b456208042488dba4c6f4a319dde55.bindTooltip(
+                `<div>
+                     四谷小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d1d952766ae4bd68b878287f269787d = L.marker(
+                [35.54773425, 139.66982880555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4d1d952766ae4bd68b878287f269787d.bindTooltip(
+                `<div>
+                     日吉小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_513c3ebda8c24c4f93426803b3c81944 = L.marker(
+                [35.53312297222222, 139.69295358333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_513c3ebda8c24c4f93426803b3c81944.bindTooltip(
+                `<div>
+                     南河原中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_054b8cc1d3b14432904f361c1e7cd4e2 = L.marker(
+                [35.58628077777778, 139.65489477777777],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_054b8cc1d3b14432904f361c1e7cd4e2.bindTooltip(
+                `<div>
+                     西丸子小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b73080aed9d4ee0bdfedd2b909cd083 = L.marker(
+                [35.563932888888885, 139.67239336111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2b73080aed9d4ee0bdfedd2b909cd083.bindTooltip(
+                `<div>
+                     玉川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48a3d34251e04e5c89e0eff8f6ae46f5 = L.marker(
+                [35.55877430555555, 139.67831627777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_48a3d34251e04e5c89e0eff8f6ae46f5.bindTooltip(
+                `<div>
+                     平間中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_437c379f67cc45ad97e15a97fb39269d = L.marker(
+                [35.557957583333334, 139.68159647222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_437c379f67cc45ad97e15a97fb39269d.bindTooltip(
+                `<div>
+                     下河原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8fbbde5d51d34f42b0c370d70cd55c17 = L.marker(
+                [35.565727027777776, 139.6614382777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8fbbde5d51d34f42b0c370d70cd55c17.bindTooltip(
+                `<div>
+                     住吉中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d20166b843c94ca29757f7f8b9a54c39 = L.marker(
+                [35.56812413888889, 139.6529006388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d20166b843c94ca29757f7f8b9a54c39.bindTooltip(
+                `<div>
+                     住吉小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ccab6312b82422ebd238864d622a466 = L.marker(
+                [35.585517833333334, 139.64600355555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9ccab6312b82422ebd238864d622a466.bindTooltip(
+                `<div>
+                     宮内中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cf934bb775946b6be577df0595af550 = L.marker(
+                [35.61118183333333, 139.60018644444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2cf934bb775946b6be577df0595af550.bindTooltip(
+                `<div>
+                     久地小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_064e462066484d6490f6ea40706665f3 = L.marker(
+                [35.5976155, 139.59735430555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_064e462066484d6490f6ea40706665f3.bindTooltip(
+                `<div>
+                     上作延小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfc470d1efff4bcaa7b93b9e8fd78cc9 = L.marker(
+                [35.60101097222222, 139.6276905277778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_bfc470d1efff4bcaa7b93b9e8fd78cc9.bindTooltip(
+                `<div>
+                     東高津小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f02b0c1a1c1c4995abed3ea169e336f6 = L.marker(
+                [35.57354452777778, 139.61014380555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f02b0c1a1c1c4995abed3ea169e336f6.bindTooltip(
+                `<div>
+                     野川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3df49f9d2d040da82902ac75fbd5a8d = L.marker(
+                [35.60336261111111, 139.56936922222224],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d3df49f9d2d040da82902ac75fbd5a8d.bindTooltip(
+                `<div>
+                     平中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64d2c9b11a804bdc8eecd02ca308096e = L.marker(
+                [35.57158686111111, 139.57627316666665],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_64d2c9b11a804bdc8eecd02ca308096e.bindTooltip(
+                `<div>
+                     西有馬小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddacc3dcdd2f4c5192b4a2828e54c2f6 = L.marker(
+                [35.5711725, 139.5767335],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ddacc3dcdd2f4c5192b4a2828e54c2f6.bindTooltip(
+                `<div>
+                     有馬中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7428c9376434e95ae6220bd7db373ce = L.marker(
+                [35.582713222222225, 139.57543291666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b7428c9376434e95ae6220bd7db373ce.bindTooltip(
+                `<div>
+                     土橋小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ae07557dc8549149ca5969f0af9d29d = L.marker(
+                [35.60544408333333, 139.58176583333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_0ae07557dc8549149ca5969f0af9d29d.bindTooltip(
+                `<div>
+                     長尾小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1de7528500ff47d9a7c24d879a480b95 = L.marker(
+                [35.61686597222222, 139.57434858333335],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_1de7528500ff47d9a7c24d879a480b95.bindTooltip(
+                `<div>
+                     宿河原小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dfb38f135594421db08a7feec6b0a38b = L.marker(
+                [35.622743944444444, 139.53012538888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_dfb38f135594421db08a7feec6b0a38b.bindTooltip(
+                `<div>
+                     南菅中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a91abcc84fca4a86bbab55814d2819fa = L.marker(
+                [35.62294611111111, 139.53188130555554],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a91abcc84fca4a86bbab55814d2819fa.bindTooltip(
+                `<div>
+                     南菅小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1c1fc510193495595a900176a8439f0 = L.marker(
+                [35.63128472222222, 139.54664825],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b1c1fc510193495595a900176a8439f0.bindTooltip(
+                `<div>
+                     下布田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4724ea572ea4c0bae5903306606ec51 = L.marker(
+                [35.62373888888889, 139.54352391666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_c4724ea572ea4c0bae5903306606ec51.bindTooltip(
+                `<div>
+                     生田ふれあい広場
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2115c323d58643cf9d05af2d18e869cf = L.marker(
+                [35.61176088888889, 139.47657847222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2115c323d58643cf9d05af2d18e869cf.bindTooltip(
+                `<div>
+                     栗木台小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9e33d3ef3dd4aeaae8989f8f1d393b4 = L.marker(
+                [35.60215825, 139.50412188888887],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f9e33d3ef3dd4aeaae8989f8f1d393b4.bindTooltip(
+                `<div>
+                     麻生小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4daeecf760444d9bbe1eb42674950b27 = L.marker(
+                [35.59586238888889, 139.5035802222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4daeecf760444d9bbe1eb42674950b27.bindTooltip(
+                `<div>
+                     麻生中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac4a364321f648e5840a8418d845a9b9 = L.marker(
+                [35.509773527777774, 139.69663008333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ac4a364321f648e5840a8418d845a9b9.bindTooltip(
+                `<div>
+                     京町中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acc94ae20d904b3086b444b64c95f13c = L.marker(
+                [35.58089894444444, 139.63156058333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_acc94ae20d904b3086b444b64c95f13c.bindTooltip(
+                `<div>
+                     下新城
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_119df69d294248b684c2d76cb3b3f687 = L.marker(
+                [35.56605963888889, 139.65850725],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_119df69d294248b684c2d76cb3b3f687.bindTooltip(
+                `<div>
+                     中原平和公園　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1c13fdd3e27f4f39a2b3246923f36480 = L.marker(
+                [35.535523833333336, 139.73864155555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_1c13fdd3e27f4f39a2b3246923f36480.bindTooltip(
+                `<div>
+                     大師中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_406d9ee1a04b4b129ad61de895ca15e3 = L.marker(
+                [35.596743833333335, 139.53522091666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_406d9ee1a04b4b129ad61de895ca15e3.bindTooltip(
+                `<div>
+                     潮見台配水池
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c06d50dd2b641bfbae87deb9315ad07 = L.marker(
+                [35.618063138888886, 139.46000733333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_0c06d50dd2b641bfbae87deb9315ad07.bindTooltip(
+                `<div>
+                     はるひ野
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6106477bd994400ba4e3ded571cb9278 = L.marker(
+                [35.537672944444445, 139.74550319444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6106477bd994400ba4e3ded571cb9278.bindTooltip(
+                `<div>
+                     殿町小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_773c07eb8ecc4820a17315b94c17a3f2 = L.marker(
+                [35.522858416666665, 139.68905383333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_773c07eb8ecc4820a17315b94c17a3f2.bindTooltip(
+                `<div>
+                     川崎中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33503af04c4c4aacb815f0083157d3c2 = L.marker(
+                [35.545934027777776, 139.68892394444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_33503af04c4c4aacb815f0083157d3c2.bindTooltip(
+                `<div>
+                     西御幸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_63c1625b11634f0b8faa25e9511b57fb = L.marker(
+                [35.57479858333333, 139.60657175],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_63c1625b11634f0b8faa25e9511b57fb.bindTooltip(
+                `<div>
+                     西野川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e479ab1aaf3744c1a44906208c9e1239 = L.marker(
+                [35.57146044444445, 139.64042005555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e479ab1aaf3744c1a44906208c9e1239.bindTooltip(
+                `<div>
+                     下小田中小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f070e80414ca46038f8bbe6440b2efcc = L.marker(
+                [35.55677736111111, 139.67610233333335],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f070e80414ca46038f8bbe6440b2efcc.bindTooltip(
+                `<div>
+                     平間小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95e10024cee84ba5b5574a0d821c7ede = L.marker(
+                [35.57640141666667, 139.64927344444445],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_95e10024cee84ba5b5574a0d821c7ede.bindTooltip(
+                `<div>
+                     今井小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5909a13dc6e94c8eb851861374541017 = L.marker(
+                [35.56259283333333, 139.6634168611111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_5909a13dc6e94c8eb851861374541017.bindTooltip(
+                `<div>
+                     苅宿小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af8b0e8d90c548a1a3aff88d57394396 = L.marker(
+                [35.5958385, 139.6188821111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_af8b0e8d90c548a1a3aff88d57394396.bindTooltip(
+                `<div>
+                     高津中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_610c53cbb6e74ca59630ec9065d3513d = L.marker(
+                [35.57348838888889, 139.60629805555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_610c53cbb6e74ca59630ec9065d3513d.bindTooltip(
+                `<div>
+                     野川中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84b9f63e7e944d5c91de5d20724a5d1a = L.marker(
+                [35.566693666666666, 139.60390341666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_84b9f63e7e944d5c91de5d20724a5d1a.bindTooltip(
+                `<div>
+                     南野川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aed35ccb15664f2a9db665a0ff4b7e3c = L.marker(
+                [35.59562569444444, 139.58032105555554],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_aed35ccb15664f2a9db665a0ff4b7e3c.bindTooltip(
+                `<div>
+                     平小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_362092babf70467e963a5a0ff795a49d = L.marker(
+                [35.63243261111111, 139.5328387222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_362092babf70467e963a5a0ff795a49d.bindTooltip(
+                `<div>
+                     菅小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d4f08bb6a554d5eaa7840ab848168b0 = L.marker(
+                [35.59666380555556, 139.49270727777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4d4f08bb6a554d5eaa7840ab848168b0.bindTooltip(
+                `<div>
+                     片平小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25f14bef9c6a4086ae2c525d92d7fc81 = L.marker(
+                [35.57913280555555, 139.51009019444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_25f14bef9c6a4086ae2c525d92d7fc81.bindTooltip(
+                `<div>
+                     東柿生小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_142033841dd748adbd76afb59a8ab9d7 = L.marker(
+                [35.57533727777778, 139.60318558333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_142033841dd748adbd76afb59a8ab9d7.bindTooltip(
+                `<div>
+                     野川第３公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0328b02f827d4618bab32ab922ec5206 = L.marker(
+                [35.52030005555556, 139.70237983333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_0328b02f827d4618bab32ab922ec5206.bindTooltip(
+                `<div>
+                     渡田中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59c8f80777014e16b6dc78e4bf1349e2 = L.marker(
+                [35.61362719444445, 139.49923575],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_59c8f80777014e16b6dc78e4bf1349e2.bindTooltip(
+                `<div>
+                     金程中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_55d13ff25e764c958990434c7967add3 = L.marker(
+                [35.61703552777778, 139.5034055],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_55d13ff25e764c958990434c7967add3.bindTooltip(
+                `<div>
+                     千代ヶ丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_66f98164a6554b2e9b3d01ac60ec162f = L.marker(
+                [35.626715777777775, 139.53693752777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_66f98164a6554b2e9b3d01ac60ec162f.bindTooltip(
+                `<div>
+                     東菅小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b019de6b56b45ff950d2bc6b4fa6d99 = L.marker(
+                [35.52110988888889, 139.75525472222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8b019de6b56b45ff950d2bc6b4fa6d99.bindTooltip(
+                `<div>
+                     千鳥町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49b61368aeb54bd89bdb695d662b1dd8 = L.marker(
+                [35.56799313888889, 139.59148191666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_49b61368aeb54bd89bdb695d662b1dd8.bindTooltip(
+                `<div>
+                     有馬小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33819b576fbd4945a7af28fdf0f8b147 = L.marker(
+                [35.58946272222222, 139.58370416666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_33819b576fbd4945a7af28fdf0f8b147.bindTooltip(
+                `<div>
+                     宮前平中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d86f7e53f9c0446db08d809d5a812926 = L.marker(
+                [35.58805825, 139.601509],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d86f7e53f9c0446db08d809d5a812926.bindTooltip(
+                `<div>
+                     西梶ヶ谷小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff09dcfa3a35479ba3b15ce586a44e3f = L.marker(
+                [35.567682166666664, 139.61859291666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ff09dcfa3a35479ba3b15ce586a44e3f.bindTooltip(
+                `<div>
+                     久末小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2392c34f86742d291493ceb95d96fb4 = L.marker(
+                [35.62946497222222, 139.55101444444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e2392c34f86742d291493ceb95d96fb4.bindTooltip(
+                `<div>
+                     中野島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c190d5243aa84a27babcc0c9577a88c8 = L.marker(
+                [35.61235788888889, 139.5793546388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_c190d5243aa84a27babcc0c9577a88c8.bindTooltip(
+                `<div>
+                     稲田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70cfa921864f4e55b14851b33538541a = L.marker(
+                [35.54691586111111, 139.67481725],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_70cfa921864f4e55b14851b33538541a.bindTooltip(
+                `<div>
+                     東小倉小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_84b9107e7a3f4f1ea7baec3863b7c364 = L.marker(
+                [35.564435277777775, 139.64508005555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_84b9107e7a3f4f1ea7baec3863b7c364.bindTooltip(
+                `<div>
+                     井田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b16b7c74b6924364a2c8b6122b2215da = L.marker(
+                [35.502039583333335, 139.706485],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b16b7c74b6924364a2c8b6122b2215da.bindTooltip(
+                `<div>
+                     白石町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_301fa19c039544e1a182713edfeb6688 = L.marker(
+                [35.52572463888889, 139.69257869444445],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_301fa19c039544e1a182713edfeb6688.bindTooltip(
+                `<div>
+                     日進町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e861ad5db21d4afaaef71da53b7a64e7 = L.marker(
+                [35.529631305555554, 139.73076113888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e861ad5db21d4afaaef71da53b7a64e7.bindTooltip(
+                `<div>
+                     台町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ebbff10e60cb42bb8e003275c12dbce2 = L.marker(
+                [35.52744858333333, 139.70289147222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ebbff10e60cb42bb8e003275c12dbce2.bindTooltip(
+                `<div>
+                     共同溝（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f059b20838704e06ac94f59102227a61 = L.marker(
+                [35.52659416666667, 139.7017962777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f059b20838704e06ac94f59102227a61.bindTooltip(
+                `<div>
+                     共同溝（３）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6eeccb0157074b4ab9d16cf410633349 = L.marker(
+                [35.53232588888889, 139.70648519444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6eeccb0157074b4ab9d16cf410633349.bindTooltip(
+                `<div>
+                     共同溝（４）　
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b026d4f40894e16ac7c450b9d3ed616 = L.marker(
+                [35.53104375, 139.72556430555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_1b026d4f40894e16ac7c450b9d3ed616.bindTooltip(
+                `<div>
+                     川中島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3c87161e634411ea74f2fb3efc4b7a5 = L.marker(
+                [35.52815088888889, 139.73649516666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f3c87161e634411ea74f2fb3efc4b7a5.bindTooltip(
+                `<div>
+                     南大師中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8057ff1952c646de9a46585e3f1610ca = L.marker(
+                [35.549210277777775, 139.67891205555554],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8057ff1952c646de9a46585e3f1610ca.bindTooltip(
+                `<div>
+                     下平間小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_381c77f81c484d96b60054409d35814f = L.marker(
+                [35.59251977777778, 139.58903105555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_381c77f81c484d96b60054409d35814f.bindTooltip(
+                `<div>
+                     宮崎台小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b940c24b60643b6b6a6ac750b88b1eb = L.marker(
+                [35.60594316666667, 139.53320894444445],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8b940c24b60643b6b6a6ac750b88b1eb.bindTooltip(
+                `<div>
+                     南生田
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9da5163998fe440da6ab383b9a268bdc = L.marker(
+                [35.62840747222222, 139.5461953888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9da5163998fe440da6ab383b9a268bdc.bindTooltip(
+                `<div>
+                     中野島中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3466146bd62542279854f3f3ba28f164 = L.marker(
+                [35.584254083333335, 139.64832066666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_3466146bd62542279854f3f3ba28f164.bindTooltip(
+                `<div>
+                     等々力緑地
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_402837f887df4dc49ff554c1370a3883 = L.marker(
+                [35.619799, 139.5623084722222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_402837f887df4dc49ff554c1370a3883.bindTooltip(
+                `<div>
+                     多摩区役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f55e19b16389483d9c6738931cac0840 = L.marker(
+                [35.529355861111114, 139.7084768611111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f55e19b16389483d9c6738931cac0840.bindTooltip(
+                `<div>
+                     富士見
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af95f91ef5c943e7baeda83c41d8a257 = L.marker(
+                [35.599521861111114, 139.60824122222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_af95f91ef5c943e7baeda83c41d8a257.bindTooltip(
+                `<div>
+                     高津区役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6420010310804d73aaac0d74bec39d0f = L.marker(
+                [35.58050386111111, 139.65656708333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6420010310804d73aaac0d74bec39d0f.bindTooltip(
+                `<div>
+                     小杉小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9943f794cad4536a20c2ac0ec6e7a37 = L.marker(
+                [35.58396305555556, 139.56841897222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e9943f794cad4536a20c2ac0ec6e7a37.bindTooltip(
+                `<div>
+                     宮崎配水塔
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4b30dd097c44363bc7bf34c7509cc37 = L.marker(
+                [35.61145375, 139.47009547222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b4b30dd097c44363bc7bf34c7509cc37.bindTooltip(
+                `<div>
+                     黒川配水池
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_32d76af2a73f49029334b274fe699b92 = L.marker(
+                [35.60580411111111, 139.53384230555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_32d76af2a73f49029334b274fe699b92.bindTooltip(
+                `<div>
+                     南生田中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa4c42c17c1a46adaea144e582134360 = L.marker(
+                [35.57869794444444, 139.6645349722222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_aa4c42c17c1a46adaea144e582134360.bindTooltip(
+                `<div>
+                     上丸子小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8afae75313f340b5b6af26a0d989963b = L.marker(
+                [35.547672, 139.6623292777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8afae75313f340b5b6af26a0d989963b.bindTooltip(
+                `<div>
+                     夢見ヶ崎小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ccf9cf5ab7ec459e89c7ade07ccd40dd = L.marker(
+                [35.57888136111111, 139.6642611388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ccf9cf5ab7ec459e89c7ade07ccd40dd.bindTooltip(
+                `<div>
+                     上丸子小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c1e824f292c4e72a1f0c1c1d62aa400 = L.marker(
+                [35.61836566666667, 139.57909744444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_3c1e824f292c4e72a1f0c1c1d62aa400.bindTooltip(
+                `<div>
+                     稲田中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3de3e1ca78eb49d1a5ab9bde9e570336 = L.marker(
+                [35.52188513888889, 139.7079501111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_3de3e1ca78eb49d1a5ab9bde9e570336.bindTooltip(
+                `<div>
+                     田島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aa2bd21b7bec4cbc93692f102d2d768d = L.marker(
+                [35.57037588888889, 139.63305419444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_aa2bd21b7bec4cbc93692f102d2d768d.bindTooltip(
+                `<div>
+                     子母口
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f84f5976cc6c477a9c7b7bf12ac54481 = L.marker(
+                [35.54219805555555, 139.68543355555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f84f5976cc6c477a9c7b7bf12ac54481.bindTooltip(
+                `<div>
+                     戸手小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_31e229b5a6084760a76e88e3045bd2e6 = L.marker(
+                [35.569776194444444, 139.6323069722222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_31e229b5a6084760a76e88e3045bd2e6.bindTooltip(
+                `<div>
+                     子母口小学校・東橘中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fd02c45ca0094f3bb29a0d745eba5983 = L.marker(
+                [35.60745977777778, 139.5144956388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_fd02c45ca0094f3bb29a0d745eba5983.bindTooltip(
+                `<div>
+                     百合丘小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fb573b0132942598c49531218dad4a0 = L.marker(
+                [35.61155130555556, 139.49993566666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9fb573b0132942598c49531218dad4a0.bindTooltip(
+                `<div>
+                     金程小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb4998ddd99d4a4b967b0055cc8f9b8b = L.marker(
+                [35.54622372222222, 139.68114086111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_eb4998ddd99d4a4b967b0055cc8f9b8b.bindTooltip(
+                `<div>
+                     古川小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d564135ac1249adb13da2eed3e21f39 = L.marker(
+                [35.60568258333333, 139.52737122222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4d564135ac1249adb13da2eed3e21f39.bindTooltip(
+                `<div>
+                     高石配水塔
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aef010f85379463699abdf0039b35f0e = L.marker(
+                [35.57659411111111, 139.65512394444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_aef010f85379463699abdf0039b35f0e.bindTooltip(
+                `<div>
+                     中原区役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2324852de02347728f5c1a41d44cdbbe = L.marker(
+                [35.575829194444445, 139.65019922222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2324852de02347728f5c1a41d44cdbbe.bindTooltip(
+                `<div>
+                     今井仲町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa3fa5c9af254dae878169317b0bec08 = L.marker(
+                [35.60583038888889, 139.52747616666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_fa3fa5c9af254dae878169317b0bec08.bindTooltip(
+                `<div>
+                     西生田（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffade4c9509d4495b0ad3142e5fc3baa = L.marker(
+                [35.52863447222222, 139.70546625],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ffade4c9509d4495b0ad3142e5fc3baa.bindTooltip(
+                `<div>
+                     宮前小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f39f277c77534d36acae958514ffe899 = L.marker(
+                [35.58580038888889, 139.65958341666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f39f277c77534d36acae958514ffe899.bindTooltip(
+                `<div>
+                     中原中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_323b3af4d3304006b309716b92930c67 = L.marker(
+                [35.61070244444444, 139.54656580555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_323b3af4d3304006b309716b92930c67.bindTooltip(
+                `<div>
+                     三田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbcb5324f96a4a05aa3760e96f20b20e = L.marker(
+                [35.511272166666664, 139.7017796111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_dbcb5324f96a4a05aa3760e96f20b20e.bindTooltip(
+                `<div>
+                     小田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6aba9558daa4368ab7c4c7f87319812 = L.marker(
+                [35.58152136111111, 139.63213733333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e6aba9558daa4368ab7c4c7f87319812.bindTooltip(
+                `<div>
+                     新城小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eeda12aa8b7b4e4e8dad2a01b382b126 = L.marker(
+                [35.59870319444445, 139.52362219444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_eeda12aa8b7b4e4e8dad2a01b382b126.bindTooltip(
+                `<div>
+                     東百合丘（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb210c3f0c96480ba16590dd764a31ef = L.marker(
+                [35.53325255555556, 139.7350123611111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_cb210c3f0c96480ba16590dd764a31ef.bindTooltip(
+                `<div>
+                     大師小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f89b320267044e9bb06127fe6a6555d = L.marker(
+                [35.51610327777778, 139.7101916111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_8f89b320267044e9bb06127fe6a6555d.bindTooltip(
+                `<div>
+                     渡田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef692e8bf8f545f4b009bf2526123ef1 = L.marker(
+                [35.63702658333333, 139.5233966111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ef692e8bf8f545f4b009bf2526123ef1.bindTooltip(
+                `<div>
+                     菅中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43cdf53fbc0e42368b0ed088d8e79053 = L.marker(
+                [35.61723327777778, 139.51966730555554],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_43cdf53fbc0e42368b0ed088d8e79053.bindTooltip(
+                `<div>
+                     細山
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91108ef1374a46778b837a542e800151 = L.marker(
+                [35.53540711111111, 139.73821530555554],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_91108ef1374a46778b837a542e800151.bindTooltip(
+                `<div>
+                     大師河原
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a3a685334c14c2287002fe60265f649 = L.marker(
+                [35.59862888888889, 139.55222313888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2a3a685334c14c2287002fe60265f649.bindTooltip(
+                `<div>
+                     菅生（３）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac6de401c37949a68ec8088dffc4cd2e = L.marker(
+                [35.520089166666665, 139.78721016666665],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ac6de401c37949a68ec8088dffc4cd2e.bindTooltip(
+                `<div>
+                     浮島町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a861192430d4ff09dccb13933435501 = L.marker(
+                [35.629067666666664, 139.55116791666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_0a861192430d4ff09dccb13933435501.bindTooltip(
+                `<div>
+                     中野島小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_58068c213c884e21b4a880652ea12279 = L.marker(
+                [35.61877058333334, 139.54754427777775],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_58068c213c884e21b4a880652ea12279.bindTooltip(
+                `<div>
+                     枡形（３）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_236a49e9d1e0418b8fdfd942574f1d66 = L.marker(
+                [35.53141322222222, 139.73059111111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_236a49e9d1e0418b8fdfd942574f1d66.bindTooltip(
+                `<div>
+                     大師公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28d79e2f62294926b3bab124cc7cce2f = L.marker(
+                [35.52362727777778, 139.72666655555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_28d79e2f62294926b3bab124cc7cce2f.bindTooltip(
+                `<div>
+                     池上新町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6cbecaeb28bd4eba9e048b2d4797a2a6 = L.marker(
+                [35.52004980555556, 139.70288783333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6cbecaeb28bd4eba9e048b2d4797a2a6.bindTooltip(
+                `<div>
+                     渡田向町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c4407fcbfb5146f1852e04ecf5d08cc8 = L.marker(
+                [35.579688, 139.63853397222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_c4407fcbfb5146f1852e04ecf5d08cc8.bindTooltip(
+                `<div>
+                     大戸小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab357fc1dc264515b95a0ae0c597a9f9 = L.marker(
+                [35.589219194444446, 139.58445994444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ab357fc1dc264515b95a0ae0c597a9f9.bindTooltip(
+                `<div>
+                     宮前平
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1f55b791f59041b7b6fc65705d427110 = L.marker(
+                [35.60422883333333, 139.57001741666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_1f55b791f59041b7b6fc65705d427110.bindTooltip(
+                `<div>
+                     平
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f45e50e3cbbe4e52a8d8674f089b85e0 = L.marker(
+                [35.587687333333335, 139.49937477777777],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f45e50e3cbbe4e52a8d8674f089b85e0.bindTooltip(
+                `<div>
+                     上麻生（３）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_007a2223915b4cc0a84b0ddb3f7fc35a = L.marker(
+                [35.555281083333334, 139.6867393611111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_007a2223915b4cc0a84b0ddb3f7fc35a.bindTooltip(
+                `<div>
+                     古市場小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_336c49055b854ac49eb75af60721e32e = L.marker(
+                [35.543149416666665, 139.65978144444443],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_336c49055b854ac49eb75af60721e32e.bindTooltip(
+                `<div>
+                     南加瀬小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf6428d7bad7445b80926f370bae8a19 = L.marker(
+                [35.57297769444445, 139.6702588888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_bf6428d7bad7445b80926f370bae8a19.bindTooltip(
+                `<div>
+                     下沼部小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_283e9107cb474141bd5b1088847821fe = L.marker(
+                [35.57826063888889, 139.64417605555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_283e9107cb474141bd5b1088847821fe.bindTooltip(
+                `<div>
+                     西中原中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e59734d31bd4d8b96f8b5f9b93de48f = L.marker(
+                [35.58993725, 139.56375205555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_3e59734d31bd4d8b96f8b5f9b93de48f.bindTooltip(
+                `<div>
+                     犬蔵中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43006d9ec41e4699b7d355bad8e00bcc = L.marker(
+                [35.61692386111111, 139.51974166666668],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_43006d9ec41e4699b7d355bad8e00bcc.bindTooltip(
+                `<div>
+                     西生田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43d109c0896741c1be60b6457b73780d = L.marker(
+                [35.60875363888889, 139.54729133333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_43d109c0896741c1be60b6457b73780d.bindTooltip(
+                `<div>
+                     長沢配水池
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d96b10c663f4fae96315a70309919a1 = L.marker(
+                [35.58154891666667, 139.57476375],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_5d96b10c663f4fae96315a70309919a1.bindTooltip(
+                `<div>
+                     鷺沼配水池
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9031bcf99f5b4e12ae7bb8b6ceea9f1a = L.marker(
+                [35.5793765, 139.48297833333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9031bcf99f5b4e12ae7bb8b6ceea9f1a.bindTooltip(
+                `<div>
+                     岡上小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99502f9de0e549b281f4bd2e6ffb6b09 = L.marker(
+                [35.50990575, 139.7398685],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_99502f9de0e549b281f4bd2e6ffb6b09.bindTooltip(
+                `<div>
+                     水江町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_995469c3d9a34212bbf6134b0fe0ded8 = L.marker(
+                [35.52957580555555, 139.70443311111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_995469c3d9a34212bbf6134b0fe0ded8.bindTooltip(
+                `<div>
+                     共同溝（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07a56580e47a4499ab57f13b48fa7233 = L.marker(
+                [35.51941455555556, 139.7228101388889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_07a56580e47a4499ab57f13b48fa7233.bindTooltip(
+                `<div>
+                     桜川公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d29a85823fc4126891268e5e889f1aa = L.marker(
+                [35.50965030555555, 139.69871094444446],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6d29a85823fc4126891268e5e889f1aa.bindTooltip(
+                `<div>
+                     小田公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddf335f2e3904752bcba20d99ccf5d13 = L.marker(
+                [35.51111816666667, 139.70857413888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ddf335f2e3904752bcba20d99ccf5d13.bindTooltip(
+                `<div>
+                     南部防災ｾﾝﾀｰ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f970aef586c84f0dbb2fd7b960c4985c = L.marker(
+                [35.49616977777778, 139.7592448888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f970aef586c84f0dbb2fd7b960c4985c.bindTooltip(
+                `<div>
+                     東扇島
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7616c53805864cb4bd17329845850a72 = L.marker(
+                [35.52851502777778, 139.7076456111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_7616c53805864cb4bd17329845850a72.bindTooltip(
+                `<div>
+                     富士見中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_493fb280288b411e98a08b7623387938 = L.marker(
+                [35.527757333333334, 139.73633852777778],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_493fb280288b411e98a08b7623387938.bindTooltip(
+                `<div>
+                     四谷上町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a856fea76ac4d9bbed736f27ccd8fbb = L.marker(
+                [35.52269502777778, 139.69027191666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4a856fea76ac4d9bbed736f27ccd8fbb.bindTooltip(
+                `<div>
+                     下並木
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_640dbae2a7ce4e4ca5bc268a59d0273b = L.marker(
+                [35.527037388888886, 139.72261583333332],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_640dbae2a7ce4e4ca5bc268a59d0273b.bindTooltip(
+                `<div>
+                     川中島中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_99116b5bc4c946b1a7c12a4f0d2800f6 = L.marker(
+                [35.53300930555555, 139.74622122222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_99116b5bc4c946b1a7c12a4f0d2800f6.bindTooltip(
+                `<div>
+                     出来野公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0c7af4e6f9b4b9691a37fba17dadb9c = L.marker(
+                [35.54407997222222, 139.66215608333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a0c7af4e6f9b4b9691a37fba17dadb9c.bindTooltip(
+                `<div>
+                     南加瀬
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2997ce5c0cfe4f99afd1c55f4d4c7c4d = L.marker(
+                [35.55434325, 139.67476325],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2997ce5c0cfe4f99afd1c55f4d4c7c4d.bindTooltip(
+                `<div>
+                     下平間
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a1808814b704f889b304fcf988ce826 = L.marker(
+                [35.543808166666665, 139.68756480555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2a1808814b704f889b304fcf988ce826.bindTooltip(
+                `<div>
+                     幸区役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_406469bd74ab4f0599f7e16f6447a45b = L.marker(
+                [35.55213011111111, 139.6931106111111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_406469bd74ab4f0599f7e16f6447a45b.bindTooltip(
+                `<div>
+                     御幸公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b40a50bf8164d1596586066dcf1fb6e = L.marker(
+                [35.554409, 139.66143575],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_7b40a50bf8164d1596586066dcf1fb6e.bindTooltip(
+                `<div>
+                     北加瀬
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1784989554c4a93aecd13da0ab399d4 = L.marker(
+                [35.54614877777778, 139.66378055555555],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_a1784989554c4a93aecd13da0ab399d4.bindTooltip(
+                `<div>
+                     南加瀬五反公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40f6b9dc0dbd4db68a67ee1e2ce11b36 = L.marker(
+                [35.548554277777775, 139.67961861111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_40f6b9dc0dbd4db68a67ee1e2ce11b36.bindTooltip(
+                `<div>
+                     塚越中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_94bde4f0f7cf4030a7ac3fd9398d3b88 = L.marker(
+                [35.532427194444445, 139.69299927777777],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_94bde4f0f7cf4030a7ac3fd9398d3b88.bindTooltip(
+                `<div>
+                     南河原中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e8436b3dda5471e9f971560bbb6dd66 = L.marker(
+                [35.57706286111111, 139.66657744444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2e8436b3dda5471e9f971560bbb6dd66.bindTooltip(
+                `<div>
+                     上丸子山王町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_173e8d91259045d5a977c631d9d59130 = L.marker(
+                [35.578357, 139.64426580555556],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_173e8d91259045d5a977c631d9d59130.bindTooltip(
+                `<div>
+                     下小田中
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65fe791deac34db7a6afe7d5e3af18bf = L.marker(
+                [35.56691736111111, 139.66870416666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_65fe791deac34db7a6afe7d5e3af18bf.bindTooltip(
+                `<div>
+                     中丸子
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d18afba6ca4441b8a57fcc7c089ddf48 = L.marker(
+                [35.58519036111111, 139.65910891666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_d18afba6ca4441b8a57fcc7c089ddf48.bindTooltip(
+                `<div>
+                     小杉陣屋町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab00c1704432443188b5b5d6d3a13f00 = L.marker(
+                [35.56925138888889, 139.64379913888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_ab00c1704432443188b5b5d6d3a13f00.bindTooltip(
+                `<div>
+                     井田中学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9159e72bf64411c942beae1c1e6f095 = L.marker(
+                [35.556426555555554, 139.67672247222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_f9159e72bf64411c942beae1c1e6f095.bindTooltip(
+                `<div>
+                     平間小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_200d870f68664e8b991f4f3342c2cca6 = L.marker(
+                [35.55822963888889, 139.6785842222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_200d870f68664e8b991f4f3342c2cca6.bindTooltip(
+                `<div>
+                     上平間
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4bb3b52bcc84611b95d6884da5db393 = L.marker(
+                [35.58500441666666, 139.61242711111112],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_b4bb3b52bcc84611b95d6884da5db393.bindTooltip(
+                `<div>
+                     市民プラザ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e7c8f21bd414203a95c6cebdbe3a30c = L.marker(
+                [35.571046083333336, 139.62191025],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2e7c8f21bd414203a95c6cebdbe3a30c.bindTooltip(
+                `<div>
+                     久末表耕地公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09c30bb6bdba4903b543b58e92a8fb28 = L.marker(
+                [35.60473833333333, 139.61360758333333],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_09c30bb6bdba4903b543b58e92a8fb28.bindTooltip(
+                `<div>
+                     高津小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a0ddbe016e84bf1a7457fecfa4244ae = L.marker(
+                [35.609059888888886, 139.60224422222225],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_4a0ddbe016e84bf1a7457fecfa4244ae.bindTooltip(
+                `<div>
+                     久地の里公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_52415609ecaf402d9509c7d3f8f557b9 = L.marker(
+                [35.58933880555556, 139.57835419444444],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_52415609ecaf402d9509c7d3f8f557b9.bindTooltip(
+                `<div>
+                     宮前区役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5dfe4ffbf3024ba4a9ca6e7256912caa = L.marker(
+                [35.59828641666667, 139.5817815],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_5dfe4ffbf3024ba4a9ca6e7256912caa.bindTooltip(
+                `<div>
+                     神木本町
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abab441ddbd7461e82cb010693b65b67 = L.marker(
+                [35.61465863888889, 139.5230183888889],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_abab441ddbd7461e82cb010693b65b67.bindTooltip(
+                `<div>
+                     西生田（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c2a2f52454ab4b62a819751fa225447b = L.marker(
+                [35.62523130555556, 139.52946297222223],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_c2a2f52454ab4b62a819751fa225447b.bindTooltip(
+                `<div>
+                     西菅公園
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04490c927d1e4c2f874d4ad9fa0c02af = L.marker(
+                [35.623633222222225, 139.52904691666666],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_04490c927d1e4c2f874d4ad9fa0c02af.bindTooltip(
+                `<div>
+                     菅馬場（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_16f1658a1a8242e69d5b109753ee3a5c = L.marker(
+                [35.61273247222222, 139.5803398611111],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_16f1658a1a8242e69d5b109753ee3a5c.bindTooltip(
+                `<div>
+                     稲田小学校
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2d7851789702443f8f461012619b4619 = L.marker(
+                [35.60408486111111, 139.50286647222222],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_2d7851789702443f8f461012619b4619.bindTooltip(
+                `<div>
+                     万福寺
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3e4d3796d9345d8b4765ff8a38fbef6 = L.marker(
+                [35.57962288888889, 139.51242005555557],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_e3e4d3796d9345d8b4765ff8a38fbef6.bindTooltip(
+                `<div>
+                     王禅寺東（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_49e6848f71354bc09df56efaff2a2f36 = L.marker(
+                [35.59220972222222, 139.49949241666667],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_49e6848f71354bc09df56efaff2a2f36.bindTooltip(
+                `<div>
+                     上麻生（１）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a07ea5c7e014ea2980c5a137ac109e4 = L.marker(
+                [35.611424166666666, 139.47035838888888],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_6a07ea5c7e014ea2980c5a137ac109e4.bindTooltip(
+                `<div>
+                     栗木台
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b1e24e2f8e644929bd1e0ec6506bef8 = L.marker(
+                [35.60379213888889, 139.50625358333335],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_9b1e24e2f8e644929bd1e0ec6506bef8.bindTooltip(
+                `<div>
+                     麻生区役所
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_abb15c90b508445993a26e87f89065b0 = L.marker(
+                [35.586647166666665, 139.51277508333334],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_abb15c90b508445993a26e87f89065b0.bindTooltip(
+                `<div>
+                     王禅寺東（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35910cf17d714344ae4e5ead21ee4d45 = L.marker(
+                [35.59649347222222, 139.50427191666665],
+                {}
+            ).addTo(map_8ad0d0d794aa44828e9b085025919fdf);
+        
+    
+            marker_35910cf17d714344ae4e5ead21ee4d45.bindTooltip(
+                `<div>
+                     上麻生（２）
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
