@@ -14,7 +14,7 @@ m = folium.Map(location=[35.535947300324544, 139.7028184738351],zoom_start=32)
 for data in store:
     # wtf ...
     url = '#' if not isinstance(data[6], str) else data[6]
-    urlhtml = '<a href="{url}">https://citi.kawasaki.jp/</a>' if url != '#' else 'no data'
+    urlhtml = f'<a href="{url}">https://citi.kawasaki.jp/</a>' if url != '#' else 'no data'
 
     tpl = f'ID: {data[1]}<br />Name: {data[2]}<br /><br />Phone: {data[4]}<br />ZIP: {data[5]}<br />Link: {urlhtml}'
     folium.Marker(
